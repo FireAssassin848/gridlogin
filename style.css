@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Trebuchet MS;
+}
+
+#background {
+    animation: hue 4s infinite linear;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: radial-gradient(hsl(0, 100%, 50%) 9%, transparent 9%);
+    background-size: 3em 3em;
+    z-index: -1;
+}
+
+.centerhv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#login {
+    animation: hue2 1s infinite linear;
+    height: fit-content;
+    width: fit-content;
+    padding: 50px;
+    background-color: rgba(0, 255, 0, 0.329);
+    border: 2px solid rgba(0, 255, 0, 0.505);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#login input, button {
+    border: 0px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+#login label {
+    margin-bottom: 5px;
+}
+
+#login button {
+    background-color: rgba(0, 255, 0, 0.712);
+    padding: 5px 0px 5px 0px
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
